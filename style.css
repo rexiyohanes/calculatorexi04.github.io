@@ -1,0 +1,92 @@
+body {
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.calculator {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.display {
+    background: black;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: beige;
+}
+
+.btn:hover {
+    background-color: blanchedalmond;
+}
+
+.operator {
+    background-color: aqua;
+    color: wheat;
+}
+
+.operator:hover {
+    background-color: aquamarine;
+}
+
+.equal {
+    background-color: green;
+    color: wheat;
+}
+
+.equal:hover {
+    background-color: yellowgreen;
+}
+
+.clear {
+    background-color: darkgray;
+    color: wheat;
+}
+
+.clear:hover {
+    background-color: darkgrey;
+}
+
+.delete {
+    background-color: red;
+    color: wheat;
+}
+
+.delete:hover {
+    background-color: tomato;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.back {
+    text-decoration: none;
+}
